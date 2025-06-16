@@ -1,0 +1,146 @@
+<!-- FLUJO DE VENTA - TIENDA EN LÍNEA TELCEL (DISTRIBUIDORES Y CLIENTE FINAL) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flujo Venta Tienda en Línea Telcel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #005bac;
+    }
+    .step {
+      background: #fff;
+      border-left: 6px solid #005bac;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .decision {
+      border-left-color: #e09132;
+      background: #fffaf0;
+    }
+    a {
+      color: #005bac;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  $1
+
+  <div class="step">
+    <h2>📌 Diagrama General del Flujo</h2>
+    <img src="https://github.com/piztian/tiendaenlineatelcel/raw/main/fotos/Flujo%20de%20Atenci%C3%B3n%20en%20Tienda%20Celucenter-Tiendaen%20linea%20venta.jpg" alt="Flujo Atención Celucenter Tienda en Línea" style="max-width:100%; margin-bottom:15px; border:1px solid #ccc;"/>
+  </div>
+
+  <div class="step">
+  <h2>1. Cliente requiere equipo para venta en línea</h2>
+  <p>El cliente llega a la tienda física y solicita apoyo para realizar una compra en Tienda en Línea Telcel.</p>
+  <p><a href="https://github.com/piztian/tiendaenlineatelcel/raw/main/pdf/Telcel,%20Infografia%20cajero%20pago%20en%20DAT%20Tienda%20en%20Linea.pdf" target="_blank">📄 Ver infografía de pago en DAT Tienda en Línea</a></p>
+    <p>El cliente llega a la tienda física y solicita apoyo para realizar una compra en Tienda en Línea Telcel.</p>
+  </div>
+
+  <div class="step">
+    <h2>Formulario para generar cuenta en Tienda en Línea Telcel</h2>
+  <img src="https://github.com/piztian/tiendaenlineatelcel/raw/main/fotos/tienda%20en%20linea%20registro.jpg" alt="Registro Tienda en Línea Telcel" style="max-width:100%; margin-bottom:10px; border:1px solid #ccc;"/>
+    <p>Se requiere llenar el siguiente formulario con los datos del cliente:</p>
+    <ul>
+      <li><strong>Clave Fuerza de Venta:</strong> GDLTOR</li>
+      <li><strong>Correo Electrónico</strong></li>
+      <li><strong>Tipo de Token</strong></li>
+      <li><strong>Perfil</strong></li>
+      <li><strong>Nombre(s)</strong></li>
+      <li><strong>Apellido Paterno</strong></li>
+      <li><strong>Apellido Materno</strong></li>
+      <li><strong>RFC</strong></li>
+      <li><strong>Calle</strong></li>
+      <li><strong>Número</strong></li>
+      <li><strong>Colonia</strong></li>
+      <li><strong>Estado</strong></li>
+      <li><strong>Municipio/Delegación</strong></li>
+      <li><strong>Ciudad</strong></li>
+      <li><strong>Código Postal</strong></li>
+      <li><strong>Teléfono</strong></li>
+    </ul>
+  </div>
+
+  <div class="step decision">
+    <h2>2. ¿Tiene cuenta en portal Mi Telcel?</h2>
+<ul>
+  <li><strong>No:</strong> Se le crea una cuenta con sus datos y se valida con su número de teléfono. Puede registrarse en <a href="https://www.telcel.com/tienda/registro" target="_blank">https://www.telcel.com/tienda/registro</a></li>
+      <li><strong>Sí:</strong> Se valida acceso.</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>3. Validación de cuenta, entrada a Mi Telcel y cierre de sesión</h2>
+    <p>Se accede a Mi Telcel para validar que funcione correctamente. Luego se cierra sesión para poder continuar.</p>
+  </div>
+
+  <div class="step">
+    <h2>4. Entrar a portal de distribuidores</h2>
+    <p>El vendedor ingresa a <a href="https://www.distribuidor.telcel.com:4475/Portal-Distribuidores/app/login" target="_blank">portal distribuidor</a> con sus credenciales.</p>
+  </div>
+
+  <div class="step">
+  <h2>5. Acceso a Tienda en Línea desde portal distribuidores</h2>
+  <img src="https://github.com/piztian/tiendaenlineatelcel/raw/main/fotos/tienda%20en%20linea%20portal.jpg" alt="Captura Portal Distribuidores" style="max-width:100%; margin-bottom:10px; border:1px solid #ccc;"/>
+    <p>Desde el menú lateral → Comercial → Tienda en Línea.</p>
+  </div>
+
+  <div class="step decision">
+    <h2>6. ¿Tiene claves correctas el cliente?</h2>
+    <ul>
+      <li><strong>Sí:</strong> Se continúa con la compra.</li>
+      <li><strong>No:</strong> Se pide recuperación de contraseña con su número Telcel.</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>7. Buscar modelo de equipo y agregar al carrito</h2>
+    <p>El vendedor busca el modelo en la tienda en línea y lo agrega al carrito.</p>
+  </div>
+
+  <div class="step">
+    <h2>8. Se siguen pasos del carrito</h2>
+    <ul>
+      <li>Método de pago</li>
+      <li>Dirección de envío</li>
+      <li>Confirmación</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>9. Seleccionar dirección de envío</h2>
+    <p>Puede ser envío a tienda o a casa del cliente.</p>
+  </div>
+
+  <div class="step decision">
+    <h2>10. ¿Se envía a tienda?</h2>
+    <p>Si no, se indica al cliente que acuda a la tienda para activación del equipo y que se registre la venta.</p>
+  </div>
+
+  <div class="step">
+    <h2>11. Se recomienda uso de cuenta Mi Telcel</h2>
+    <p>Para que el cliente pueda dar seguimiento y rastreo del pedido desde su casa.</p>
+  </div>
+
+  <div class="step">
+    <h2>12. Confirmación</h2>
+    <p>El cliente recibe correo de confirmación y detalles del pedido.</p>
+  </div>
+
+  <div class="step">
+    <h2>13. Registro interno</h2>
+    <p>El distribuidor anota la venta y registra la comisión o seguimiento correspondiente.</p>
+  </div>
+
+</body>
+</html>
