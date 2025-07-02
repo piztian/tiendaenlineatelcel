@@ -1,0 +1,162 @@
+[
+  {
+    "min": NaN,
+    "max": 219.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 219.01,
+    "max": 249.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 249.01,
+    "max": 289.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 289.01,
+    "max": 299.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 299.01,
+    "max": 419.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 419.01,
+    "max": 449.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 449.01,
+    "max": 499.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 499.01,
+    "max": 599.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 599.01,
+    "max": 619.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 619.01,
+    "max": 699.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 699.01,
+    "max": 799.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 799.01,
+    "max": 949.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 949.01,
+    "max": 999.0,
+    "markup_online": 0.0
+  },
+  {
+    "min": 999.01,
+    "max": 1099.0,
+    "markup_online": 10.0
+  },
+  {
+    "min": 1099.01,
+    "max": 1299.0,
+    "markup_online": 60.0
+  },
+  {
+    "min": 1299.01,
+    "max": 1499.0,
+    "markup_online": 85.0
+  },
+  {
+    "min": 1499.01,
+    "max": 1749.0,
+    "markup_online": 85.0
+  },
+  {
+    "min": 1749.01,
+    "max": 1999.0,
+    "markup_online": 140.0
+  },
+  {
+    "min": 1999.01,
+    "max": 2499.0,
+    "markup_online": 170.0
+  },
+  {
+    "min": 2499.01,
+    "max": 2999.0,
+    "markup_online": 210.0
+  },
+  {
+    "min": 2999.01,
+    "max": 3999.0,
+    "markup_online": 265.0
+  },
+  {
+    "min": 3999.01,
+    "max": 4999.0,
+    "markup_online": 370.0
+  },
+  {
+    "min": 4999.01,
+    "max": 5999.0,
+    "markup_online": 430.0
+  },
+  {
+    "min": 5999.01,
+    "max": 6999.0,
+    "markup_online": 495.0
+  },
+  {
+    "min": 6999.01,
+    "max": 7999.0,
+    "markup_online": 585.0
+  },
+  {
+    "min": 7999.01,
+    "max": 8999.0,
+    "markup_online": 620.0
+  },
+  {
+    "min": 8999.01,
+    "max": 9999.0,
+    "markup_online": 739.95
+  },
+  {
+    "min": 9999.01,
+    "max": 10999.0,
+    "markup_online": 804.15
+  },
+  {
+    "min": 10999.01,
+    "max": 13999.0,
+    "markup_online": 889.75
+  },
+  {
+    "min": 13999.01,
+    "max": 15999.0,
+    "markup_online": 970.0
+  },
+  {
+    "min": 15999.01,
+    "max": 17999.0,
+    "markup_online": 1071.5
+  },
+  {
+    "min": 17999.01,
+    "max": Infinity,
+    "markup_online": 1198.0
+  }
+]
