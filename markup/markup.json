@@ -156,7 +156,7 @@
   },
   {
     "min": 17999.01,
-    "max": Infinity,
-    "markup_online": 1198.0
+  "max": 999999,
+  "markup_online": 1198.00
   }
 ]
