@@ -1,162 +1,93 @@
-[
-  {
-    "min": NaN,
-    "max": 219.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 219.01,
-    "max": 249.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 249.01,
-    "max": 289.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 289.01,
-    "max": 299.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 299.01,
-    "max": 419.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 419.01,
-    "max": 449.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 449.01,
-    "max": 499.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 499.01,
-    "max": 599.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 599.01,
-    "max": 619.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 619.01,
-    "max": 699.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 699.01,
-    "max": 799.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 799.01,
-    "max": 949.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 949.01,
-    "max": 999.0,
-    "markup_online": 0.0
-  },
-  {
-    "min": 999.01,
-    "max": 1099.0,
-    "markup_online": 10.0
-  },
-  {
-    "min": 1099.01,
-    "max": 1299.0,
-    "markup_online": 60.0
-  },
-  {
-    "min": 1299.01,
-    "max": 1499.0,
-    "markup_online": 85.0
-  },
-  {
-    "min": 1499.01,
-    "max": 1749.0,
-    "markup_online": 85.0
-  },
-  {
-    "min": 1749.01,
-    "max": 1999.0,
-    "markup_online": 140.0
-  },
-  {
-    "min": 1999.01,
-    "max": 2499.0,
-    "markup_online": 170.0
-  },
-  {
-    "min": 2499.01,
-    "max": 2999.0,
-    "markup_online": 210.0
-  },
-  {
-    "min": 2999.01,
-    "max": 3999.0,
-    "markup_online": 265.0
-  },
-  {
-    "min": 3999.01,
-    "max": 4999.0,
-    "markup_online": 370.0
-  },
-  {
-    "min": 4999.01,
-    "max": 5999.0,
-    "markup_online": 430.0
-  },
-  {
-    "min": 5999.01,
-    "max": 6999.0,
-    "markup_online": 495.0
-  },
-  {
-    "min": 6999.01,
-    "max": 7999.0,
-    "markup_online": 585.0
-  },
-  {
-    "min": 7999.01,
-    "max": 8999.0,
-    "markup_online": 620.0
-  },
-  {
-    "min": 8999.01,
-    "max": 9999.0,
-    "markup_online": 739.95
-  },
-  {
-    "min": 9999.01,
-    "max": 10999.0,
-    "markup_online": 804.15
-  },
-  {
-    "min": 10999.01,
-    "max": 13999.0,
-    "markup_online": 889.75
-  },
-  {
-    "min": 13999.01,
-    "max": 15999.0,
-    "markup_online": 970.0
-  },
-  {
-    "min": 15999.01,
-    "max": 17999.0,
-    "markup_online": 1071.5
-  },
-  {
-    "min": 17999.01,
-  "max": 999999,
-  "markup_online": 1198.00
-  }
-]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta Comisión Tienda en Línea Telcel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 40px;
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 20px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>📲 Calculadora de Comisión Tienda en Línea Telcel</h1>
+  <p>Ingresa el <strong>precio público</strong> del equipo para ver la comisión vigente:</p>
+  
+  <input type="number" id="precioInput" placeholder="Ej. 2899" step="0.01" />
+  <button onclick="buscarMarkup()">Consultar Comisión</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    const markupData = [
+      { min: 0, max: 219.00, markup_online: 0 },
+      { min: 219.01, max: 249.00, markup_online: 0 },
+      { min: 249.01, max: 289.00, markup_online: 0 },
+      { min: 289.01, max: 299.00, markup_online: 0 },
+      { min: 299.01, max: 419.00, markup_online: 0 },
+      { min: 419.01, max: 449.00, markup_online: 0 },
+      { min: 449.01, max: 499.00, markup_online: 0 },
+      { min: 499.01, max: 599.00, markup_online: 0 },
+      { min: 599.01, max: 619.00, markup_online: 0 },
+      { min: 619.01, max: 699.00, markup_online: 0 },
+      { min: 699.01, max: 799.00, markup_online: 0 },
+      { min: 799.01, max: 949.00, markup_online: 0 },
+      { min: 949.01, max: 999.00, markup_online: 0 },
+      { min: 999.01, max: 1099.00, markup_online: 10 },
+      { min: 1099.01, max: 1299.00, markup_online: 60 },
+      { min: 1299.01, max: 1499.00, markup_online: 85 },
+      { min: 1499.01, max: 1749.00, markup_online: 85 },
+      { min: 1749.01, max: 1999.00, markup_online: 140 },
+      { min: 1999.01, max: 2499.00, markup_online: 170 },
+      { min: 2499.01, max: 2999.00, markup_online: 210 },
+      { min: 2999.01, max: 3999.00, markup_online: 265 },
+      { min: 3999.01, max: 4999.00, markup_online: 370 },
+      { min: 4999.01, max: 5999.00, markup_online: 430 },
+      { min: 5999.01, max: 6999.00, markup_online: 495 },
+      { min: 6999.01, max: 7999.00, markup_online: 585 },
+      { min: 7999.01, max: 8999.00, markup_online: 620 },
+      { min: 8999.01, max: 9999.00, markup_online: 739.95 },
+      { min: 9999.01, max: 10999.00, markup_online: 804.15 },
+      { min: 10999.01, max: 13999.00, markup_online: 889.75 },
+      { min: 13999.01, max: 15999.00, markup_online: 970 },
+      { min: 15999.01, max: 17999.00, markup_online: 1071.50 },
+      { min: 17999.01, max: 999999, markup_online: 1198 }
+    ];
+
+    function buscarMarkup() {
+      const precio = parseFloat(document.getElementById("precioInput").value);
+      const resultado = document.getElementById("resultado");
+
+      if (isNaN(precio)) {
+        resultado.textContent = "⚠️ Ingresa un precio válido.";
+        resultado.style.color = "red";
+        return;
+      }
+
+      const rango = markupData.find(r => precio >= r.min && precio <= r.max);
+
+      if (rango) {
+        resultado.textContent = `💰 Comisión: $${rango.markup_online.toFixed(2)}`;
+        resultado.style.color = "green";
+      } else {
+        resultado.textContent = "❌ No se encontró una comisión para ese precio.";
+        resultado.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
